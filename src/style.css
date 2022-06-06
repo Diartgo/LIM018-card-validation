@@ -1,11 +1,32 @@
 header {text-align: center;}
-body {Background-color: black;}
+body {Background-color: rgb(0, 0, 0);}
 
-h1 {color: white;
-    text-align: center;}
-h2 {color: white;
-    text-align: center;}
-h3 {color: white;
-    text-align: center;}
+h1 {color: white;}
+h2 {color: white;}
+h3 {color: white;}
+* {text-align: center;}
 
+.contenedor-plomo { 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 0;
+    height: 100vh;
+}
+.contenedor-tarjeta {
+    background-color: grey;
+    width: 100%;
+    max-width: 500px;
+    padding: 30px 10px 20px 20px;
+    border-radius: 30px ;
+        
+  }
 
+  p {color: white;}
+
+  label {
+      display: block;
+      color: rgb(22, 24, 23);
+      margin-bottom: 5px;
+  }

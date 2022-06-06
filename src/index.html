@@ -4,17 +4,74 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="validator.js"></script>
   </head>
   <body>
     <header>
-      <img src="marvel.jpg" text-align=center;/>
+      <img src="marvel.jpg" />
     </header>
     <main>
     <h1>SUPERFLIX</h1>
     <h2>Peliculas y Series de Superheroes de Marvel y DC en un solo lugar.</h2>
     <h3>A tan solo 14.90 al mes</h4>
     </main>
-    <footer></footer>
+    <form>
+      <button type="submit">Efectuar Pago</button>
+    </form>
+
+    
+
+    <div class="contenedor-plomo">
+      <div class="contenedor-tarjeta"> 
+        <h1>Validación de la tarjeta</h1>
+        <div class="datos"> 
+        <form  id="formulario-tarjeta" class="formulario-tarjeta">
+          <p>Ingresa nombre</p>
+          <input type="Text" >
+         <!-- <p>Ingresa numero de tarjeta</p>
+          <label for="cardNumber"> <input id="cardNumber" type="text" maxlength="16" autocomplete="off" required>
+          </label>-->
+       
+          <p>Ingresa fecha de expiración</p>
+          <label for="seleccionaMes">Ingresa mes <select name="mes" id="seleccionaMes">
+            <option disable selected>mes</option>
+            <option value="1">01</option>
+            <option value="2">02</option>
+            <option value="3">03</option>
+            <option value="4">04</option>
+            <option value="5">05</option>
+            <option value="6">06</option>
+            <option value="7">07</option>
+            <option value="8">08</option>
+            <option value="9">09</option>
+            <option value="10">10</option>
+            <option value="11">11</option>
+            <option value="12">12</option>
+            </select>
+          </label>
+          <label for="selecionaYear"> Ingresa año <select name="year" id="seleccionaYear">
+            <option disable selected>año</option>
+            <option value="1">2022</option>
+            <option value="2">2023</option>
+            <option value="3">2024</option>
+            <option value="4">2025</option>
+            <option value="5">2026</option>
+            <option value="6">2027</option>
+            </select>
+          </label>
+          <p>CVV</p>
+          <input type="text" maxlength="3" >      
+          <p></p>
+          <button type="button"> Validar </button>    
+        </form>  
+        </div>
+      </div>
+    </div>
+    
+
+    <footer>
+      <p>Desarrollado por <strong>Diana Gómez </strong></p>
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>

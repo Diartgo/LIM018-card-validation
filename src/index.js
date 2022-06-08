@@ -1,5 +1,5 @@
 import validator from './validator.js';
 
 
-validator.isValid("123456789");
+validator.isValid("3327");
 

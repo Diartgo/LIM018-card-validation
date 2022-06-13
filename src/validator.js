@@ -31,36 +31,36 @@ const validator = {
         console.log('su tarjeta es invalida');
       }
         
+    },
+  
+  
+
+  maskify :  function(cardNumber) {
+ let numCardMichi;
+ let arr2=[];
+ let arr= cardNumber.split('');
+
+    console.log(arr);
+
+ arr.forEach((element,index) => {
+    if (index < arr.length-4){
+      element="#"; 
     }
+    arr2.push(element);
+   });
 
-         //console.log(cardSeparado[step]);
-         // console.log(numPar);
-    
+   numCardMichi=arr2.join('');
+   
+   console.log(numCardMichi);
+  
+   return numCardMichi;
+   
+
   }
-        
-          
-          //console.log(cardPares);
-       
-                
-
-                              
-  
-  
   
 
+}    
 export default validator;
-
-//cardNumber=prompt("cual es tu numero de tarjeta");
-
-// //Separar el string
-
-//let arrayCardNum=cardSeparado.map(function(cardSeparado){
-
-  //return cardSeparado * 1; //pasamos a Numero
-
-//})
-
-//let cardPares= arrayCard
 
 
 //function validar() {

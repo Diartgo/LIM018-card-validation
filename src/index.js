@@ -1,5 +1,6 @@
 import validator from './validator.js';
 
 
-validator.isValid("3327");
+validator.isValid(cardNumber);
 
+validator.maskify(cardNumber);

@@ -23,12 +23,12 @@ const validator = {
         }
          sumaTotalCard=sumaTotalCard+nuevoNumero;
     }  
-      console.log(sumaTotalCard);
+      // console.log(sumaTotalCard);
 
       if (sumaTotalCard %10 == 0) {
-        console.log('su tarjeta es valida');
+        return true;
       } else{
-        console.log('su tarjeta es invalida');
+        return false;
       }
         
     },
@@ -40,7 +40,7 @@ const validator = {
  let arr2=[];
  let arr= cardNumber.split('');
 
-    console.log(arr);
+    // console.log(arr);
 
  arr.forEach((element,index) => {
     if (index < arr.length-4){
@@ -51,7 +51,7 @@ const validator = {
 
    numCardMichi=arr2.join('');
    
-   console.log(numCardMichi);
+  //  console.log(numCardMichi);
   
    return numCardMichi;
    

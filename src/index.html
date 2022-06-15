@@ -4,36 +4,39 @@
     <meta charset="utf-8">
     <title>Tarjeta de crédito válida</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="validator.js"></script>
   </head>
   <body>
-    <header>
-      <img src="marvel.jpg" />
-    </header>
-    <main>
-    <h1>SUPERFLIX</h1>
-    <h2>Peliculas y Series de Superheroes de Marvel y DC en un solo lugar.</h2>
-    <h3>A tan solo 14.90 al mes</h4>
-    </main>
-    <form>
-      <button type="submit">Efectuar Pago</button>
-    </form>
+    <section id="superflixpagina">
+      <header>
+          <img src="marvel.jpg" alt="Superheroes Marvel y DC" />
+        </header>
+  
+      
+        <main>
+        <h1>SUPERFLIX</h1>
+        <h2>Peliculas y Series de Superheroes de Marvel y DC en un solo lugar.</h2>
+        <h3>A tan solo 14.90 al mes</h3>
+        </main>
+        <button id="botonpagar">Efectuar Pago</button>
+       
+      </section>  
 
-    
-
-    <div class="contenedor-plomo">
+    <div class="contenedor-plomo" id="datospagina">
       <div class="contenedor-tarjeta"> 
         <h1>Validación de la tarjeta</h1>
         <div class="datos"> 
-        <form  id="formulario-tarjeta" class="formulario-tarjeta">
+          <form  id="formulario-tarjeta" class="formulario-tarjeta">
           <p>Ingresa nombre</p>
           <input type="Text" >
-          <p>Ingresa numero de tarjeta</p>
-          <label for="cardNumber"> <input id="cardNumber" type="text" maxlength="16" autocomplete="off" required>
-          </label>
-       
+          <div class="tarjeta">
+            <label for="numero-tarjeta" > Ingrese numero de tarjera </label>
+            <input type="text" id="numeroTarjeta" maxlength="16" autocomplete="off" required>
+            <p id="respuesta">  </p>
+          </div>
+          <div class="expiracion">
           <p>Ingresa fecha de expiración</p>
-          <label for="seleccionaMes"> <select name="mes" id="seleccionaMes">
+          <label for="seleccionaMes">Seleciona mes </label>
+          <select name="mes" id="seleccionaMes">
             <option disable selected>mes</option>
             <option value="1">01</option>
             <option value="2">02</option>
@@ -48,8 +51,9 @@
             <option value="11">11</option>
             <option value="12">12</option>
             </select>
-          </label>
-          <label for="selecionaYear">  <select name="year" id="seleccionaYear">
+          
+          <label for="selecionaYear">Selecciona Año </label>
+            <select name="year" id="seleccionaYear">
             <option disable selected>año</option>
             <option value="1">2022</option>
             <option value="2">2023</option>
@@ -58,17 +62,16 @@
             <option value="5">2026</option>
             <option value="6">2027</option>
             </select>
-          </label>
+          </div>
           <p>CVV</p>
           <input type="text" maxlength="3" >      
-          <p></p>
-          <button type="button"> Validar </button>    
+          <br>
+        <button class="botton" id="botonValidar"> Validar </button> 
+        
         </form>  
-        </div>
       </div>
     </div>
-    
-
+    </div>
     <footer>
       <p>Desarrollado por <strong>Diana Gómez </strong></p>
     </footer>

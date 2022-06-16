@@ -1,76 +1,83 @@
-<!DOCTYPE html>
+<!DOCTYPE html5>
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>Superflix</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <section id="superflixpagina">
       <header>
+
           <img src="marvel.jpg" alt="Superheroes Marvel y DC" />
         </header>
-  
-      
+       
         <main>
-        <h1>SUPERFLIX</h1>
-        <h2>Peliculas y Series de Superheroes de Marvel y DC en un solo lugar.</h2>
-        <h3>A tan solo 14.90 al mes</h3>
+          <h1>SUPERFLIX</h1>
+          <h2 class="letras">Peliculas y Series de Superheroes de Marvel y DC en un solo lugar.</h2>
+          <h3 class="letras">A tan solo 14.90 al mes</h3>
         </main>
-        <button id="botonpagar">Efectuar Pago</button>
+        <button class="botonpago" id="botonpagar">EFECTUAR PAGO</button>
        
       </section>  
 
     <div class="contenedor-plomo" id="datospagina">
+      <div class="contenedor-titulo">
+        <p class="titulo">Validación de la tarjeta</p>
+      </div>
       <div class="contenedor-tarjeta"> 
-        <h1>Validación de la tarjeta</h1>
         <div class="datos"> 
           <form  id="formulario-tarjeta" class="formulario-tarjeta">
-          <p>Ingresa nombre</p>
-          <input type="Text" >
+          <p class="letrasdatos">Ingresa nombre</p>
+          <input class=caja type="Text" >
           <div class="tarjeta">
-            <label for="numero-tarjeta" > Ingrese numero de tarjera </label>
-            <input type="text" id="numeroTarjeta" maxlength="16" autocomplete="off" required>
+            <label for="numero-tarjeta" class="letrasdatos"> Numero de tarjera </label>
+            <input class= caja type="text" id="numeroTarjeta" maxlength="16" autocomplete="off" required>
             <p id="respuesta">  </p>
           </div>
-          <div class="expiracion">
-          <p>Ingresa fecha de expiración</p>
-          <label for="seleccionaMes">Seleciona mes </label>
-          <select name="mes" id="seleccionaMes">
-            <option disable selected>mes</option>
-            <option value="1">01</option>
-            <option value="2">02</option>
-            <option value="3">03</option>
-            <option value="4">04</option>
-            <option value="5">05</option>
-            <option value="6">06</option>
-            <option value="7">07</option>
-            <option value="8">08</option>
-            <option value="9">09</option>
-            <option value="10">10</option>
-            <option value="11">11</option>
-            <option value="12">12</option>
-            </select>
-          
-          <label for="selecionaYear">Selecciona Año </label>
-            <select name="year" id="seleccionaYear">
-            <option disable selected>año</option>
-            <option value="1">2022</option>
-            <option value="2">2023</option>
-            <option value="3">2024</option>
-            <option value="4">2025</option>
-            <option value="5">2026</option>
-            <option value="6">2027</option>
-            </select>
+          <div class="expiracioncvv">
+            <div class="expiracion">
+              <p class="letrasdatos">Fecha de expiración</p>
+              <label for="seleccionaMes" > </label>
+              <select name="mes" id="seleccionaMes" class="numdatos">
+                <option disable>mes</option>
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              
+              <label for="selecionaYear">  </label>
+                <select name="year" id="seleccionaYear" class="numdatos">
+                <option disable selected>año</option>
+                <option value="1">2022</option>
+                <option value="2">2023</option>
+                <option value="3">2024</option>
+                <option value="4">2025</option>
+                <option value="5">2026</option>
+                <option value="6">2027</option>
+                </select>
+            </div>
+            <div class="cvvnumero">
+              <p class="letrasdatos" >CVV</p>
+              <input type="text" maxlength="3" class="cajcvv">      
+            </div>
           </div>
-          <p>CVV</p>
-          <input type="text" maxlength="3" >      
-          <br>
-        <button class="botton" id="botonValidar"> Validar </button> 
-        
-        </form>  
+              <br>
+          <div>  
+          <button class="botton" id="botonValidar"> Validar </button> 
+          </div> 
+          </form>  
+        </div>
       </div>
-    </div>
     </div>
     <footer>
       <p>Desarrollado por <strong>Diana Gómez </strong></p>

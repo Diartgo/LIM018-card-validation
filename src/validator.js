@@ -2,7 +2,12 @@ const validator = {
   isValid :  function(cardNumber) {
     
     let cardSeparado=cardNumber.split('').reverse();
-    //console.log(cardSeparado);
+    
+    // let tipoTarjeta=cardSeparado[cardSeparado.length-1]*1;
+    //   if (tipoTarjeta==4)
+    //        'es VISA'
+    //   if (tipoTarjeta==5)
+    //       'es Mastercard'
 
     var numPar = 0;
     let sumaTotalCard=0;

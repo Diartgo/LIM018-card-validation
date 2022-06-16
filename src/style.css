@@ -1,32 +1,169 @@
-header {text-align: center;}
-body {Background-color: rgb(0, 0, 0);}
+header {
+    text-align: center;
+}
+body {
+    Background-color: rgb(0, 0, 0);
+}
 
-h1 {color: white;}
-h2 {color: white;}
-h3 {color: white;}
+h1 {
+    color: white;
+    font-family: 'IM FELL English SC';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 72px;
+    line-height: 100px;
+    text-align: center;
+}
+h2 {
+    color: white;
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+}
+
+h3 {
+    color: white;
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.botonpago{
+    background-color: yellow;
+    color:rgb(0, 0, 0);
+    font-family: 'Robot';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 20px;
+    line-height: 33px;
+    width: 100%;
+    max-width: 200px;
+    padding: 10px 8px 10px 8px;
+    border-radius: 15px ;
+
+}
+
+.tituloletras{
+    color: white;
+    font-family: 'Bungee';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+}
+
+.letrasdatos{
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 36px;
+    line-height: 43px;
+}
+
 * {text-align: center;}
 
+#respuesta{
+    font-family: 'arial';
+    font-style: normal;
+    font-weight: 100;
+    font-size: 28px;
+    line-height: 43px;
+}
 .contenedor-plomo { 
     display: none;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 0;
-    height: 100vh;
+    width: 100%;
+    height:100%;
+    background: blue;
+
+}
+
+.contenedor-titulo{
+    width: max-content;
+    height: max-content;
+}
+
+.titulo {
+    color: white;
+    font-family: 'IM FELL English SC';
+    font-style: normal;
+    font-weight: 200;
+    font-size: 80px;
+    line-height: 120px;
+    text-align: center;
+    
 }
 .contenedor-tarjeta {
-    background-color: grey;
-    width: 100%;
-    max-width: 500px;
-    padding: 30px 10px 20px 20px;
+    width: max-content;
+    height: max-content;
+    background-color: #C4C4C4;
+    margin: 50px auto;
+    width: 900px;
+    height: 800px;
+    padding: 10px 10px 10px 10px;
     border-radius: 30px ;
         
   }
 
-  p {color: white;}
+.expiracioncvv {
+    display: inline-block ;
+
+}
+  p {
+      color: black;
+    }
 
   label {
-      display: block;
       color: rgb(22, 24, 23);
       margin-bottom: 5px;
+
+  }
+
+  .caja {
+      align-items: center;
+      font-size: 36px;
+      width: 600px;
+      height: 60px;
+      background: #FFFFFF;
+      border: 2px solid #C4C4C4;
+  }
+
+  .cajcvv {
+        align-items: center;
+        font-size: 36px;
+        width: 150px;
+        height: 60px;
+        background: #FFFFFF;
+        border: 2px solid #C4C4C4;
+}
+  .numdatos {
+        display: inline-block;
+        font-weight: 500;
+        font-size: 25px;
+        width: 100px;
+        height: 50px;
+        background: #FFFFFF;
+        border: 2px solid #C4C4C4;
+
+  }
+
+  .botton {
+        background-color: #FD2A17;
+        border-color: #FD2A17;
+        color:white;
+        font-family: 'Robot';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 33px;
+        width: 100%;
+        max-width: 200px;
+        padding: 5px 5px 5px 5px;
+        border-radius: 15px ; 
   }

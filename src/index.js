@@ -9,14 +9,11 @@ let datosPagina=document.getElementById("datospagina");
 
 let botonPagar=document.getElementById("botonpagar");
     botonPagar.addEventListener('click', ()=>{
-        console.log("hola")
         superflixPagina.style.display = "none";
         datosPagina.style.display = "flex";
     })
 
 let botonValidar=document.getElementById("botonValidar");
-
-
 
     botonValidar.addEventListener('click',(e)=>{
         e.preventDefault();
@@ -37,6 +34,7 @@ let botonValidar=document.getElementById("botonValidar");
     let numeroEnmascarado=validator.maskify(cardNumber);
     document.getElementById("numeroTarjeta").value=numeroEnmascarado;
 
+   
     })
 
  

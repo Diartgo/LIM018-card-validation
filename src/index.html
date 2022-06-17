@@ -29,7 +29,7 @@
         <div class="datos"> 
           <form  id="formulario-tarjeta" class="formulario-tarjeta">
           <p class="letrasdatos">Ingresa nombre</p>
-          <input class=caja type="Text" >
+          <input class=caja type="Text" required>
           <div class="tarjeta">
             <label for="numero-tarjeta" class="letrasdatos"> Numero de tarjera </label>
             <input class= caja type="text" id="numeroTarjeta" maxlength="16" autocomplete="off" required>
@@ -71,7 +71,7 @@
               <input type="text" maxlength="3" class="cajcvv">      
             </div>
           </div>
-              <br>
+              <p> </p>
           <div>  
           <button class="botton" id="botonValidar"> Validar </button> 
           </div> 
@@ -80,7 +80,7 @@
       </div>
     </div>
     <footer>
-      <p>Desarrollado por <strong>Diana Gómez </strong></p>
+      <p class="pie">Desarrollado por <strong>Diana Gómez </strong></p>
     </footer>
     <script src="index.js" type="module"></script>
   </body>

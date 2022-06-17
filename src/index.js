@@ -10,7 +10,7 @@ let datosPagina=document.getElementById("datospagina");
 let botonPagar=document.getElementById("botonpagar");
     botonPagar.addEventListener('click', ()=>{
         superflixPagina.style.display = "none";
-        datosPagina.style.display = "flex";
+        datosPagina.style.display = "block";
     })
 
 let botonValidar=document.getElementById("botonValidar");
